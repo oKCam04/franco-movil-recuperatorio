@@ -1,0 +1,15 @@
+Null Safety significa que las variables no pueden tener un valor null a menos que tú lo permitas explícitamente. Esto previene errores en tiempo de ejecución, 
+como cuando intentas acceder a un método o propiedad de una variable que no fue inicializada
+
+este es un ejemplo 
+
+String? nombre; // Puede ser null
+
+void main() {
+  print(nombre?.toUpperCase()); // No da error, imprime: null
+
+  String saludo = nombre ?? "Hola anónimo"; // Si nombre es null, usa este valor
+  print(saludo); // Hola anónimo
+}
+
+

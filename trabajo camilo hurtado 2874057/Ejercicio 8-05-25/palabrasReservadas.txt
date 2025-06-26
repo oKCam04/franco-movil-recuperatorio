@@ -1,0 +1,10 @@
+
+while : Sirve para ejecutar un bloque de código mientras una condición sea verdadera
+
+Break : Sirve para salir de un bucle (como while o for) antes de que termine normalmente
+
+async : declara que una función será asíncrona.
+
+await : espera que una operación asíncrona termine antes de continuar
+
+with : Se usa para mezclar funcionalidades de diferentes clases usando mixins

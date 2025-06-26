@@ -1,0 +1,16 @@
+Las extensiones en Dart te permiten agregar funcionalidades nuevas a clases existentes
+ —incluso si no tienes acceso al código fuente original— sin tener que heredar o modificar la clase.
+
+Este es un ejemplo 
+
+extension ValidacionesTexto on String {
+  bool esCorreo() {
+    return contains("@") && contains(".");
+  }
+}
+
+void main() {
+  String email = "usuario@email.com";
+
+  print(email.esCorreo()); // true
+}

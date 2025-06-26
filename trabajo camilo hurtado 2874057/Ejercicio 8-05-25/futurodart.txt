@@ -1,0 +1,15 @@
+El futuro en dart se maneja con then y async + await, la última es la más utilizada porque es la más moderna, 
+estás se usan hay tareas que toman tiempo y no se quiere que el programa se congele mientras esperar para seguir corriendo el código, 
+dart usa asincronia para seguir ejecutando otras tareas mientras una operación futura se completa.
+
+de está manera
+
+Future<String> obtenerMensaje() async {
+  await Future.delayed(Duration(seconds: 2));
+  return "Hola desde el futuro";
+}
+
+void main() async {
+  String mensaje = await obtenerMensaje();
+  print(mensaje);
+}
